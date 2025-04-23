@@ -1,11 +1,13 @@
 # 👋 Hey, I’m Anish Shet
 
-🚀 Full Stack Developer | Intern @ Clarovate  
-💡 Exploring AI, LLMs, Agentic RAG & Scalable Systems  
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;AI+Enthusiast;React+%7C+Node+%7C+LLMs+%7C+TS;Intern+%40+Clarovate)
 
-🌐 **Portfolio**: [https://portfolio-anishshet5-gmailcoms-projects.vercel.app](https://portfolio-anishshet5-gmailcoms-projects.vercel.app)
+![Coder GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 
-📫 Reach me:  
-- **Email**: anishshet5@gmail.com  
-- **LinkedIn**: [linkedin.com/in/anishshet](https://linkedin.com/in/anishshet)  
-- **GitHub**: [github.com/anishshet](https://github.com/anishshet)
+```js
+const anish = {
+  role: "Full Stack Developer",
+  internAt: "Clarovate",
+  techStack: ["React", "Node.js", "TypeScript", "MongoDB"],
+  currentObsession: ["LLMs", "Agentic RAG", "OCR"]
+}
