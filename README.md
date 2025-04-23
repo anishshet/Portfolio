@@ -4,10 +4,17 @@
 
 ![Coder GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
 
-```js
-const anish = {
-  role: "Full Stack Developer",
-  internAt: "Clarovate",
-  techStack: ["React", "Node.js", "TypeScript", "MongoDB"],
-  currentObsession: ["LLMs", "Agentic RAG", "OCR"]
-}
+🌐 **Portfolio**: [https://portfolio-anishshet5-gmailcoms-projects.vercel.app](https://portfolio-anishshet5-gmailcoms-projects.vercel.app)
+
+📫 Reach me:  
+- 📧 anishshet5@gmail.com  
+- 💼 [LinkedIn](https://linkedin.com/in/anishshet)  
+- 🧠 [GitHub](https://github.com/anishshet)
+
+---
+
+## 📊 GitHub Stats
+
+![Anish's GitHub stats](https://github-readme-stats.vercel.app/api?username=anishshet&show_icons=true&theme=github_dark)
+![GitHub Streak](https://streak-stats.demolab.com/?user=anishshet&theme=dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anishshet&layout=compact&theme=github_dark)
