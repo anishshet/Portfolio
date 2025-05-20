@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code, Github, Linkedin, Mail } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,22 +38,23 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      scrolled ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-6">
         <nav className="flex items-center justify-between py-4">
-          <a href="#" className="text-2xl font-bold flex items-center gap-2 text-cyan-600 dark:text-cyan-400">
+          <a href="#" className="text-xl font-['Press_Start_2P'] flex items-center gap-2 text-indigo-600 dark:text-indigo-400">
             <Code className="h-6 w-6" />
-            <span>Anish Shet</span>
+            <span>AS</span>
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <ul className="flex gap-6">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 font-medium transition-colors"
+                    className="text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition-colors"
                   >
                     {link.name}
                   </a>
@@ -67,28 +69,32 @@ const Navbar: React.FC = () => {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   aria-label={link.ariaLabel}
-                  className="text-slate-600 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors"
+                  className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
                 >
                   {link.icon}
                 </a>
               ))}
+              <ThemeToggle />
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-slate-700 dark:text-slate-300" 
-            onClick={toggleMenu}
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-4">
+            <ThemeToggle />
+            <button 
+              className="text-slate-700 dark:text-slate-300" 
+              onClick={toggleMenu}
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </nav>
       </div>
 
-      {/* Mobile Menu */}
       <div 
-        className={`md:hidden fixed inset-0 bg-white dark:bg-slate-900 z-40 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`md:hidden fixed inset-0 bg-white dark:bg-slate-900 z-40 transform transition-transform duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
         <div className="flex flex-col h-full p-6">
           <div className="flex justify-end">
@@ -105,7 +111,7 @@ const Navbar: React.FC = () => {
               <li key={link.name}>
                 <a 
                   href={link.href} 
-                  className="text-xl font-medium text-slate-700 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+                  className="text-xl font-medium text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                   onClick={toggleMenu}
                 >
                   {link.name}
@@ -121,7 +127,7 @@ const Navbar: React.FC = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label={link.ariaLabel}
-                className="text-slate-600 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors"
+                className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
               >
                 {link.icon}
               </a>
