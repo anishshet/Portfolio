@@ -25,7 +25,7 @@ const Resume: React.FC = () => {
   }, []);
   
   // Replace with your actual resume link
-  const resumeLink = "https://drive.google.com/file/d/1nom3m-WgmBPZa9OO6axvLCKyIFwVBcbs/view?usp=sharing";
+  const resumeLink = "https://drive.google.com/file/d/1GxgNxrLJmT0Qq1KZxwsmoXJ6KWQKBZdK/view?usp=sharing";
 
   return (
     <section id="resume" ref={sectionRef} className="section bg-white dark:bg-slate-800">
